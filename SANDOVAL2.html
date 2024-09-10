@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Segoe Print, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #585656;
+            color: rgb(0, 0, 0);
+            padding: 1rem;
+            text-align: center;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .form-container {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-container button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 0.7rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #555;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://via.placeholder.com/1200x400" alt="Imagen de portada">
+        <h1>Mi Página Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Bienvenido a Mi Página Web</h2>
+            <p>Este es un párrafo de ejemplo en la sección de inicio. Aquí puedes poner una introducción sobre el contenido de tu página.</p>
+        </section>
+
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Mi nombre es diego sandoval y me dedico a molestarle la vida a mi mujer</p>
+            </p>
+        </section>
+
+        <section id="services">
+            <h2>Servicios</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/800x400" alt="Servicio 1">
+                <img src="https://via.placeholder.com/800x400" alt="Servicio 2">
+                <img src="https://via.placeholder.com/800x400" alt="Servicio 3">
+            </div>
+            <p>En esta sección, puedes listar los servicios que ofreces. Usa imágenes para ilustrar cada servicio si es posible.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <div class="form-container">
+                <h3>Envíanos un Mensaje</h3>
+                <form action="mailto:tu-email@example.com" method="post" enctype="text/plain">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos para diego sandoval.</p>
+    </footer>
+</body>
+</html>
